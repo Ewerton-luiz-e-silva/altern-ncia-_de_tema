@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternância Gosto do Sistema do Usuario</title>
+
+    <style>
+        /* Estilo geral para o corpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Tema claro */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Tema escuro */
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Tema automático */
+        body.auto-mode {
+        background-color: #e0f7fa; /* Fundo azul claro */
+        color: #333333; /* Texto escuro */
+        }
+
+        /* Container principal */
+        .theme-container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Título */
+        .theme-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Grupo de alternância de temas */
+        .theme-toggle-group {
+            margin: 20px 0;
+        }
+
+        /* Botão de alternância de tema */
+        button.multi-theme-toggle {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Cores para diferentes modos do botão */
+        button.multi-theme-toggle {
+        background-color: #add8e6; /* Cor padrão para modo automático */
+            color: #000000;
+        }
+
+        body.light-mode button.multi-theme-toggle {
+        background-color: #f0e68c; /* Cor para modo claro */
+            color: #333333;
+        }
+
+        body.dark-mode button.multi-theme-toggle {
+            background-color: #555555; /* Cor para modo escuro */
+            color: #ffffff;
+        }
+
+        body.auto-mode button.multi-theme-toggle {
+            background-color: #add8e6; /* Cor para modo automático */
+            color: #000000;
+        }
+
+        /* Estilo para hover no botão */
+        button.multi-theme-toggle:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-container">
+    <h1>Alternância de Tema</h1>
+
+    <!-- Botão com 3 posições: Claro, Escuro, Automático -->
+    <div class="theme-toggle-group">
+        <p>Tema com 3 opções:</p>
+        <button id="theme-toggle" class="multi-theme-toggle">
+        Automático
+        </button>
+    </div>
+
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
+

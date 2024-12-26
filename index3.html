@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternância de Hora</title>
+
+    <style>
+        /* Estilo geral para o corpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Tema claro */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Tema escuro */
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Container principal */
+        .theme-container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Título */
+        .theme-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Botão de alternância de tema */
+        button#time-based-theme-toggle {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: #87CEEB; /* Azul claro para tema automático */
+            color: #ffffff;
+        }
+
+        /* Estilo do botão no tema claro */
+        body.light-mode button#time-based-theme-toggle {
+            background-color: #FFD700; /* Amarelo dourado */
+            color: #333333;
+        }
+
+        /* Estilo do botão no tema escuro */
+        body.dark-mode button#time-based-theme-toggle {
+            background-color: #555555; /* Cinza escuro */
+            color: #ffffff;
+        }
+
+        /* Efeito hover no botão */
+        button#time-based-theme-toggle:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="theme-container">
+    <h1>Alternância de Tema</h1>
+    <button id="time-based-theme-toggle">Modo Automático</button>
+    </div>
+
+    <script src="./script3.js"></script>
+</body>
+</html>

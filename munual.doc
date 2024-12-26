@@ -1,0 +1,44 @@
+1. Alternância com três opções (Claro, Escuro e Automático baseado no sistema do usuário):
+Descrição:
+Este código cria um botão que permite alternar entre:
+Modo Claro: Fundo branco com texto preto.
+Modo Escuro: Fundo preto com texto branco.
+Modo Automático: Detecta a preferência do sistema do usuário (tema claro ou escuro) e ajusta automaticamente.
+Como funciona:
+Usa o localStorage para salvar a preferência do usuário.
+Adiciona classes ao <body> (light-mode, dark-mode) para aplicar estilos específicos definidos no CSS.
+No modo automático, utiliza a API matchMedia para verificar a configuração do sistema do usuário ((prefers-color-scheme: dark)).
+O botão muda de cor e texto dependendo do modo ativo.
+
+2. Alternância com duas opções (Claro e Escuro):
+Descrição:
+Este botão permite alternar apenas entre:
+Modo Claro: Fundo branco com texto preto.
+Modo Escuro: Fundo preto com texto branco.
+Como funciona:
+Sem suporte ao modo automático.
+Também usa o localStorage para salvar a preferência do usuário.
+Alterna as classes no <body> (light-mode e dark-mode) com base no modo escolhido.
+O botão altera o texto e a cor para indicar o modo ativo.
+
+3. Alternância com horário do dia:
+Descrição:
+Este botão ativa o modo automático baseado no horário do dia:
+Claro: Durante o dia (6h às 18h).
+Escuro: Durante a noite (18h às 6h).
+Como funciona:
+O JavaScript verifica a hora atual usando a classe Date e aplica o tema correspondente.
+Não armazena preferências; o tema é determinado sempre que a página é carregada.
+Diferenciais:
+Modos flexíveis e personalizáveis:
+
+O primeiro código abrange mais casos de uso com um modo automático sofisticado.
+O segundo código é mais simples, adequado para interfaces diretas.
+O terceiro código é útil para experiências dinâmicas baseadas no horário.
+Interface visual:
+
+Botões indicam claramente o tema ativo através de texto e cores.
+Experiência do usuário:
+
+O uso do localStorage melhora a experiência ao salvar preferências.
+A detecção automática no modo automático (baseado no sistema ou horário) ajusta-se de forma inteligente às preferências do usuário.

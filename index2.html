@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternância de 2 Tema</title>
+    <style>
+        /* Estilo geral para o corpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Tema claro */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Tema escuro */
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Container principal */
+        .theme-container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Título */
+        .theme-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Grupo de alternância de temas */
+        .theme-toggle-group {
+            margin: 20px 0;
+        }
+
+        /* Botão de alternância de tema */
+        button.simple-theme-toggle {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Estilos do botão com base no tema */
+        body.light-mode button.simple-theme-toggle {
+            background-color: #f0e68c; /* Amarelo claro para modo claro */
+            color: #333333;
+        }
+
+        body.dark-mode button.simple-theme-toggle {
+        background-color: #555555; /* Cinza escuro para modo escuro */
+            color: #ffffff;
+        }
+
+        /* Efeito hover no botão */
+        button.simple-theme-toggle:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-container">
+    <h1>Alternância de Tema</h1>
+
+    <!-- Botão com 2 posições: Claro e Escuro -->
+    <div class="theme-toggle-group">
+        <p>Tema com 2 opções:</p>
+        <button id="simple-theme-toggle" class="simple-theme-toggle">
+        Claro / Escuro
+        </button>
+    </div>
+
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
